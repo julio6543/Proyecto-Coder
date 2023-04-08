@@ -1,0 +1,71 @@
+.NavBar{
+    width: 97%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0e0f0f;
+}
+
+.NavBar .nav-logo{
+    font-weight: 700;
+    font-size: 21px;
+    margin: 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.NavBar .nav-logo:hover{
+    color: #ad6a1e;
+    opacity: 0.9;
+}
+
+.NavBar .nav-logo span{
+    color: #f60101cb;
+    opacity: 0.9;
+}
+.NavBar .nav-logo span:hover{
+    color: #ffffff;
+}
+
+.NavBar .nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: pre;
+}
+
+.NavBar .nav-items a{
+    color: #f02424;
+    font-size: 16px ;
+    font-weight: bold;
+    text-decoration:none;
+    margin: 15px;
+    position: relative;
+    /* opacity: 0.9; */
+}
+
+.NavBar .nav-items img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.NavBar .nav-items a:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+
+.NavBar .nav-items a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    transition: all .45s;
+}
+
+.NavBar .nav-items a:hover::before{
+    width:100%;
+    }
