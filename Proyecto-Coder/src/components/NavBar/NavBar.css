@@ -9,6 +9,7 @@
 }
 
 .NavBar .nav-logo{
+    
     font-weight: 700;
     font-size: 21px;
     margin: 15px;
@@ -16,7 +17,7 @@
     cursor: pointer;
 }
 .NavBar .nav-logo:hover{
-    color: #ad6a1e;
+    color: #f60101cb;
     opacity: 0.9;
 }
 

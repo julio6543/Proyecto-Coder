@@ -1,0 +1,35 @@
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .list-item {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 20rem;
+  }
+  
+  .list-item img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .list-item p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .list-item a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .list-item a:hover {
+    opacity: 0.8;
+  }
+  
