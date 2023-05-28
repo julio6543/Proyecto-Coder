@@ -1,0 +1,119 @@
+Cart.css
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+    
+    .cart-items {
+        margin-bottom: 20px;
+    }
+    
+    .cart-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .cart-item img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+    
+    .cart-item-details {
+        flex: 1;
+    }
+    
+    .cart-item-name {
+        font-weight: bold;
+    }
+    
+    .cart-item-price {
+        color: #888;
+    }
+    
+    .total {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .clear-cart-btn {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .checkout-btn {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .link {
+        color: #888;
+        text-decoration: none;
+    }
+    
+    .link:hover {
+        text-decoration: underline;
+    }
+    
+        
+        .cleanButton {
+    
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        
+        .optionLink {
+        
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .optionLink:hover {
+            background-color: #ff4f4f;
+        }
+        .option-link {
+        
+            background-color: #2196f3;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            }
+            
+            .option-link:hover {
+            
+                background-color: #1976d2;
+            }
+            
+    

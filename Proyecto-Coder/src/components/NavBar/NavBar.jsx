@@ -12,7 +12,7 @@ export const NavBar = () => {
             <Link to='/categoria/Xbox'>Xbox </Link>
             <Link to='/categoria/Nintendo'>Nintendo </Link>
             <Link to='/categoria/Family'>Family</Link>
-            <span><CartWidget/></span>
+            <span ><CartWidget/></span>
         </div>
     </div>
     )

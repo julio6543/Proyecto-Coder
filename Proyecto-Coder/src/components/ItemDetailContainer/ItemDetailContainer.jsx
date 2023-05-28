@@ -22,9 +22,9 @@ const ItemDetailContainer = () => {
         description={producto.description}
       />
     }
-  </div>
+        </div>
 );
     
 }
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

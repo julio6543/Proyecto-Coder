@@ -1,14 +1,17 @@
-import cart from "./assets/svg-gobbler.svg"
-import  './CartWidget.css'
+import React, { useState } from 'react';
+import cart from './assets/svg-gobbler.svg';
+import './CartWidget.css';
 
 const CartWidget = () => {
-    return(
+    const [productCount, setProductCount] = useState(0);
+    
 
+    return (
         <div className="cartwidget">
-            <img src={cart} alt="cart-widget" />
-            0
+        <img src={cart} alt="cart-widget" />
+        <span>{productCount}</span>
         </div>
-        
-        )
-}
-export default CartWidget
+    );
+};
+
+export default CartWidget;

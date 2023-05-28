@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0e0f0f;
+    background: #000000;
 }
 
 .NavBar .nav-logo{
@@ -70,3 +70,4 @@
 .NavBar .nav-items a:hover::before{
     width:100%;
     }
+    

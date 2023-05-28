@@ -36,7 +36,7 @@ if(categoryId == undefined){
       price={product.price} 
       category={product.category} 
       description={product.description}/>)}
-      {/* <ItemList productos={products}/> */}
+
       
     </div>
   );
