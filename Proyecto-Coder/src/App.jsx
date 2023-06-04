@@ -11,11 +11,12 @@ import CartWidget from './components/CartWidget/CartWidget';
 import Checkout from "./components/Checkout/Checkout";
 
 
+
 const App = () => {
   return (
     <div className="App">
+      <CartProvider>
       <BrowserRouter>
-        <CartProvider>
           <NavBar />
           <CartWidget />
           <Routes>
@@ -26,8 +27,8 @@ const App = () => {
             <Route path="/checkout" element={<Checkout/>} />
             <Route path="*" element={<NotFound/>} />
           </Routes>
-        </CartProvider>
       </BrowserRouter>
+      </CartProvider>
     </div>
   );
 };

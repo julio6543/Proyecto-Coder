@@ -23,7 +23,9 @@ export const ItemDetail = ({ id, image, brand, price, description }) => {
     };
 
     addItem(item, quantity);
+    console.log("product")
   };
+  
 
   return (
     <div className="item-detail">

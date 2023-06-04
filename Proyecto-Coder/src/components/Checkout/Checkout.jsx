@@ -3,8 +3,9 @@ import { CartContext } from '../../CartContext/CartContext';
 import CartItem from '../CartItem/CartItem';
 import CheckoutForm from '../CheckoutForm/CheckoutForm';
 import './Checkout.css'
-// import { writeBatch, serverTimestamp } from 'firebase/firestore';
-// import { db } from '../../firebase';
+import { writeBatch, serverTimestamp } from 'firebase/firestore';
+import { db } from '../../Services/firebase/firebaseConfig';
+
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false);
@@ -31,7 +32,7 @@ const Checkout = () => {
 
         const outOfStock = [];
 
-        // Actualizar stock de productos y construir la lista de productos sin stock suficiente
+        
         orderObj.items.forEach((item) => {
             const itemRef = db.collection('items').doc(item.id);
             batch.update(itemRef, { stock: item.stock - item.quantity });
@@ -42,18 +43,18 @@ const Checkout = () => {
         });
 
         if (outOfStock.length === 0) {
-            // Crear la orden en la base de datos
+            
             const ordersRef = db.collection('orders');
             const newOrderRef = ordersRef.doc();
             batch.set(newOrderRef, orderObj);
 
-            // Confirmar la transacción
+            
             await batch.commit();
 
             setOrderId(newOrderRef.id);
             cleanCart();
         } else {
-            // Si hay productos sin stock suficiente, mostrar un mensaje de error
+            
             throw new Error('Algunos productos están fuera de stock');
         }
         } catch (error) {
@@ -77,6 +78,8 @@ const Checkout = () => {
                 id={item.id}
                 name={item.name}
                 price={item.price}
+                image={item.image}
+                description={item.description}
                 quantity={item.quantity}
                 />
             ))}
