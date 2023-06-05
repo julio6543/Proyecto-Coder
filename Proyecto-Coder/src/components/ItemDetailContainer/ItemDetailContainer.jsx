@@ -25,19 +25,10 @@ const ItemDetailContainer = () => {
     .catch((error)=> console.log(error))
   }, [itemId])
 
-  console.log(product);
 
   return (
     <div className='ItemDetailContainer'>
-      <ItemDetail
-        key={product.id}
-        id={product.id}
-        category={product.category}
-        image={product.image}
-        brand={product.brand}
-        price={product.price}
-        description={product.description}
-      />
+          <ItemDetail {...product} /> 
     </div>
   );
 };
